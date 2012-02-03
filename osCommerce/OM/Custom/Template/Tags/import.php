@@ -13,7 +13,7 @@
       if ( file_exists($string) ) {
         return file_get_contents($string);
       } else {
-        trigger_error('Import {' . $string . '} does not exist at ' . $file);
+        trigger_error('Template Tag {import}: File does not exist: ' . $string);
       }
 
       return false;

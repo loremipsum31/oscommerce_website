@@ -10,17 +10,12 @@
 
   use osCommerce\OM\Core\HTML;
   use osCommerce\OM\Core\OSCOM;
-  use osCommerce\OM\Core\Registry;
 
   abstract class ApplicationAbstract extends \osCommerce\OM\Core\ApplicationAbstract {
     public function __construct($process = true) {
-      $OSCOM_Session = Registry::get('Session');
-
       $this->initialize();
 
       if ( $process === true ) {
-        $this->process();
-
         $action = null;
         $action_index = 1;
 
@@ -53,7 +48,7 @@
             for ( $i = $action_index, $n = count($_GET); $i < $n; $i++ ) {
               $subaction = HTML::sanitize(basename(key(array_slice($_GET, $i, 1, true))));
 
-              if ( $subaction != $OSCOM_Session->getName() && self::siteApplicationActionExists(implode('\\', $action) . '\\' . $subaction) ) {
+              if ( self::siteApplicationActionExists(implode('\\', $action) . '\\' . $subaction) ) {
                 call_user_func(array('osCommerce\\OM\\Core\\Site\\Website\\Application\\' . OSCOM::getSiteApplication() . '\\Action\\' . implode('\\', $action) . '\\' . $subaction, 'execute'), $this);
 
                 $action[] = $subaction;

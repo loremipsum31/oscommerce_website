@@ -11,7 +11,7 @@
   use osCommerce\OM\Core\OSCOM;
   use osCommerce\OM\Core\Registry;
 
-  class Controller extends \osCommerce\OM\Core\Site\Setup\ApplicationAbstract {
+  class Controller extends \osCommerce\OM\Core\Site\Website\ApplicationAbstract {
     protected function initialize() {
       $this->_page_contents = 'main.html';
       $this->_page_title = OSCOM::getDef('html_page_title');
