@@ -35,6 +35,29 @@ following directories must be symlinked to the "oscommerce" installation:
     cd jquery/ui/themes
     ln -s ../../../../../../oscommerce_website/public/external/jquery/ui/themes/Aristo Aristo
 
+A configuration block is also required in osCommerce/OM/Config/settings.ini,
+which can be copied from an existing block:
+
+    [Website]
+    enable_ssl = "false"
+    http_server = "http://your-server"
+    https_server = "http://your-server"
+    http_cookie_domain = ""
+    https_cookie_domain = ""
+    http_cookie_path = "/oscommerce/"
+    https_cookie_path = "/oscommerce/"
+    dir_ws_http_server = "/oscommerce/"
+    dir_ws_https_server = "/oscommerce/"
+    db_server = "localhost"
+    db_server_username = "nobody"
+    db_server_password = ""
+    db_server_port = ""
+    db_database = "oscommerce"
+    db_driver = "MySQL\V5"
+    db_table_prefix = "osc_"
+    db_server_persistent_connections = "false"
+    store_sessions = "Database"
+
 The website is accessed with the following URL:
 
     http://your-server/oscommerce/index.php?Website
