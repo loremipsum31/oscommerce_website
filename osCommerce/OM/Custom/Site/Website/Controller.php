@@ -13,7 +13,6 @@
   use osCommerce\OM\Core\OSCOM;
   use osCommerce\OM\Core\PDO;
   use osCommerce\OM\Core\Registry;
-  use osCommerce\OM\Core\Site\Admin\Language;
 
   class Controller implements \osCommerce\OM\Core\SiteInterface {
     protected static $_default_application = 'Index';
