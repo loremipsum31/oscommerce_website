@@ -68,7 +68,7 @@ Feedback
 Please review the following forum topic for discussions on the template engine
 functionality.
 
-#link pending#
+http://forums.oscommerce.com/topic/383392-template-engine-functionality-proposal/
 
 Note
 ----
