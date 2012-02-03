@@ -14,13 +14,17 @@
     static protected $_parse_result = false;
 
     static public function execute($string) {
-      $params = explode('|', $string, 2);
+      $params = explode('|', $string, 3);
 
       if ( !isset($params[1]) ) {
         $params[1] = null;
       }
 
-      return OSCOM::getLink($params[1], $params[0]);
+      if ( !isset($params[2]) ) {
+        $params[2] = null;
+      }
+
+      return OSCOM::getLink($params[1], $params[0], $params[2]);
     }
   }
 ?>
