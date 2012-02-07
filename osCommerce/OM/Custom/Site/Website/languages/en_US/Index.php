@@ -3,6 +3,8 @@
 # @copyright Copyright (c) 2012 osCommerce; http://www.oscommerce.com
 # @license BSD License; http://www.oscommerce.com/bsdlicense.txt
 
+html_page_title = osCommerce, Creating Online Stores Worldwide
+
 page_title = Sell Online
 
 main_content = <p>We provide you the tools to set up your own online store to market and securely sell products and services to customers worldwide.</p>
