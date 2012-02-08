@@ -47,8 +47,8 @@
         copy(OSCOM::BASE_DIRECTORY . 'Custom/Site/_skel/Application/_skel/pages/main.html', OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/Application/' . $data['name'] . '/pages/main.html');
         chmod(OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/Application/' . $data['name'] . '/pages/main.html', 0777);
 
-        copy(OSCOM::BASE_DIRECTORY . 'Custom/Site/_skel/Languages/en_US/_skel.php', OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/Languages/en_US/' . $data['name'] . '.php');
-        chmod(OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/Languages/en_US/' . $data['name'] . '.php', 0777);
+        copy(OSCOM::BASE_DIRECTORY . 'Custom/Site/_skel/languages/en_US/_skel.php', OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/languages/en_US/' . $data['name'] . '.php');
+        chmod(OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/languages/en_US/' . $data['name'] . '.php', 0777);
 
         return true;
       } catch ( \Exception $e ) {
