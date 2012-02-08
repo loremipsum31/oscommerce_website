@@ -1,0 +1,19 @@
+<div id="sidebar" class="span3">
+  <ul class="nav nav-list">
+    <li class="nav-header">{lang}navbutton_us{lang}</li>
+    <li id="snUs"><a href="{link}Us{link}">{lang}sidebar_nav_us{lang}</a></li>
+    <li id="snTeam"><a href="{link}Us|Website|Team{link}">{lang}sidebar_nav_team{lang}</a></li>
+    <li id="snNews"><a href="{link}Us|Website|News{link}">{lang}sidebar_nav_news{lang}</a></li>
+    <li id="snLegal"><a href="{link}Us|Website|Legal{link}">{lang}sidebar_nav_legal{lang}</a></li>
+  </ul>
+</div>
+
+<script>
+var current_action = '{value}current_site_application_action{value}';
+
+if ( current_action.length < 1 ) {
+  current_action = 'Us';
+}
+
+$('#sidebar #sn' + current_action).addClass('active');
+</script>

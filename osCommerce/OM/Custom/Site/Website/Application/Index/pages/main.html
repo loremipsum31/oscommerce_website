@@ -1,36 +1,38 @@
 {widget}highlights{widget}
 
-<div id="maincontainer">
-  <div id="maincontent">
-    <h1>{lang}page_title{lang}</h1>
+<div class="row">
+  <div id="maincontainer" class="span9">
+    <div id="maincontent">
+      <h1>{lang}page_title{lang}</h1>
 
-    {lang}main_content{lang}
+      {lang}main_content{lang}
+    </div>
+  </div>
+
+  <div id="sidebar" class="span3">
+    <h2>{lang}sidebar_title{lang}</h2>
+
+    {lang}sidebar_contents{lang}
   </div>
 </div>
 
-<div id="sidebar">
-  <h2>{lang}sidebar_title{lang}</h2>
-
-  {lang}sidebar_contents{lang}
-</div>
-
-<div id="chocolate_side">
+<div id="chocolate_side" class="row">
   <ul>
-    <li>
+    <li class="span4">
       <img src="{publiclink}images/front/php.png{publiclink}" />
 
       <h3>{lang}choco_php_title{lang}</h3>
 
       {lang}choco_php_content{lang}
     </li>
-    <li>
+    <li class="span4">
       <img src="{publiclink}images/front/updates.png{publiclink}" />
 
       <h3>{lang}choco_coreupdate_title{lang}</h3>
 
       {lang}choco_coreupdate_content{lang}
     </li>
-    <li>
+    <li class="span4">
       <img src="{publiclink}images/front/osi.png{publiclink}" />
 
       <h3>{lang}choco_open_source_title{lang}</h3>
@@ -40,14 +42,8 @@
   </ul>
 </div>
 
-<script>
-$(function() {
-  $('#chocolate_side ul').equalResize();
-});
-</script>
-
-<div id="services">
-  <div id="promotions">
+<div id="services" class="row">
+  <div id="promotions" class="span5">
     <h2>{lang}services_promotions_title{lang}</h2>
 
     <ul>
@@ -58,7 +54,7 @@ $(function() {
     </ul>
   </div>
 
-  <div id="partners">
+  <div id="partners" class="span7">
     <h2>{lang}services_partners_title{lang}</h2>
 
     <ul>

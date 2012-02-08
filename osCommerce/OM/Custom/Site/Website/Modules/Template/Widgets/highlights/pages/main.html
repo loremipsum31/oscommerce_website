@@ -1,33 +1,40 @@
-<div id="highlights">
-  <div class="flex-container">
-    <div class="flexslider">
-      <ul class="slides">
-        <li>
-          <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" /></a>
-          <p class="flex-caption">{lang}highlight_1_caption{lang}</p>
-        </li>
-        <li>
-          <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" /></a>
-          <span class="inline_caption">{lang}highlight_2_inline{lang}</span>
-        </li>
-        <li>
-          <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" /></a>
-          <p class="flex-caption">{lang}highlight_3_caption{lang}</p>
-        </li>
-        <li>
-          <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" /></a>
-          <p class="flex-caption">{lang}highlight_4_caption{lang}</p>
-        </li>
-      </ul>
+<div id="highlights" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" alt="" /></a>
+
+      <div class="carousel-caption">
+        <h4>{lang}highlight_1_caption{lang}</h4>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" alt="" /></a>
+    </div>
+
+    <div class="item">
+      <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" alt="" /></a>
+
+      <div class="carousel-caption">
+        <h4>{lang}highlight_3_caption{lang}</h4>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="#"><img src="{publiclink}images/940x285.gif{publiclink}" alt="" /></a>
+
+      <div class="carousel-caption">
+        <h4>{lang}highlight_4_caption{lang}</h4>
+      </div>
     </div>
   </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 
 <script>
 $(function() {
-  $('#highlights .flex-container .flexslider').flexslider({
-    animation: 'slide',
-    controlsContainer: ".flex-container"
-  });
+  $('#highlights').carousel();
 });
 </script>

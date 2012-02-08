@@ -1,0 +1,198 @@
+@import "less/bootstrap.less";
+
+@baseFontSize: 1em;
+
+body {
+  background: url('../../../images/bg.png') repeat;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  padding-bottom: 0.4em;
+}
+
+h4 {
+  padding-top: 0.29em;
+  padding-bottom: 0.3em;
+  color: #999;
+}
+
+p {
+  padding-bottom: 0.8em;
+  line-height: 1.6em;
+}
+
+header {
+  height: 90px;
+
+  #logo {
+    padding-top: 15px;
+  }
+
+  #nav {
+    font-size: 0.96em;
+    padding-top: 30px;
+
+    .btn-group {
+      float: right;
+    }
+
+    i {
+      padding-right: 10px;
+    }
+
+    #btnHome {
+      padding-right: 0px;
+    }
+  }
+}
+
+footer {
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 1px dotted #aaa;
+
+  p {
+    padding-bottom: 0.2em;
+  }
+}
+
+#logo {
+  padding-top: 10px;
+}
+
+#highlights {
+  height: 285px;
+}
+
+#maincontainer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#maincontent {
+  background-color: #fff;
+  border-right: 2px solid #d0d0d0;
+  border-bottom: 2px solid #d0d0d0;
+  padding: 1.5em;
+}
+
+#sidebar {
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+
+  p {
+    padding-bottom: 0.4em;
+  }
+
+  ul li {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    padding-bottom: 0.9em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+#chocolate_side {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  font-size: 0.96em;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      display: inline;
+
+      img {
+        float: left;
+        padding-right: 10px;
+      }
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+  }
+}
+
+#services {
+  #promotions {
+    ul {
+      list-style-type: none;
+      margin: 0;
+
+      li {
+        display: inline;
+
+        img {
+          padding-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  #partners {
+    text-align: center;
+
+    h2 {
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+
+      li {
+        display: inline;
+
+        img {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+.team_profile {
+  overflow: hidden;
+  padding-bottom: 20px;
+
+  img {
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #000;
+  }
+}
+
+ul.double {
+  list-style-type: none;
+  overflow: hidden;
+
+  li {
+    float: left;
+    width: 50%;
+    line-height: 2em;
+  }
+}
+
+/* Text selection */
+
+::-moz-selection{ background: #36d63d; color:#fff; text-shadow: none; }
+::selection { background:#36d63d; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #36d63d; }

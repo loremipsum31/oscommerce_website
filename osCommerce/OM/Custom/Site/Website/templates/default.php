@@ -31,45 +31,52 @@
 
   <script type="text/javascript" src="public/external/jquery/jquery-1.7.1.min.js"></script>
 
-  <link type="text/css" rel="stylesheet" href="public/external/jquery/ui/themes/Aristo/Aristo.css" />
-  <script type="text/javascript" src="public/external/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-  <link type="text/css" rel="stylesheet" href="public/external/flexslider/flexslider.css" rel="stylesheet" />
-  <script type="text/javascript" src="public/external/flexslider/jquery.flexslider-min.js"></script>
-
-  <script type="text/javascript" src="{publiclink}javascript/jquery/jquery.equalResize.js|Admin{publiclink}"></script>
-
-  <link rel="stylesheet" type="text/less" media="screen" href="{publiclink}templates/default/stylesheets/less/general.less{publiclink}" />
-  <script type="text/javascript" src="public/external/less/less-1.2.1.min.js"></script>
+  <script type="text/javascript" src="public/external/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{publiclink}templates/default/stylesheets/general.css{publiclink}" />
 </head>
 
 <body>
 
-<div id="wrapper">
+<div class="container">
 
-<header>
-  <div id="logo">
+<header class="row">
+  <div id="logo" class="span4">
     <a href="{link}Index{link}"><img src="{publiclink}images/oscommerce.png{publiclink}" /></a>
   </div>
 
-  <div id="nav">
-    <button id="nbUs">{lang}navbutton_us{lang}</button><button id="nbProducts">{lang}navbutton_products{lang}</button><button id="nbServices">{lang}navbutton_services{lang}</button><button id="nbCommunity">{lang}navbutton_community{lang}</button><button id="nbPlaceholder">?</button>
+  <div id="nav" class="span8">
+    <div class="btn-group">
+      <a href="{link}Index{link}" class="btn" id="btnHome"><i class="icon-home"></i></a>
+      <a href="{link}Us{link}" class="btn" id="btnUs"><i class="icon-user"></i>{lang}navbutton_us{lang}</a>
+      <a href="{link}Products{link}" class="btn"><i class="icon-download"></i>{lang}navbutton_products{lang}</a>
+      <a href="{link}Services{link}" class="btn"><i class="icon-cog"></i>{lang}navbutton_services{lang}</a>
+      <a href="{link}Community{link}" class="btn"><i class="icon-comment"></i>{lang}navbutton_community{lang}</a>
+    </div>
   </div>
 </header>
 
 <script>
-$('#nav').buttonset();
-$('#nbUs').button({ icons: { primary: 'ui-icon-person' } }).click( function() { document.location.href = '{link}Us{link}'; } );
-$('#nbProducts').button({ icons: { primary: 'ui-icon-radio-on' } }).click( function() { document.location.href = '{link}Products{link}'; } );
-$('#nbServices').button({ icons: { primary: 'ui-icon-check' } }).click( function() { document.location.href = '{link}Services{link}'; } );
-$('#nbCommunity').button({ icons: { primary: 'ui-icon-comment' } }).click( function() { document.location.href = '{link}Community{link}'; } );
-$('#nbPlaceholder').button().click( function() { document.location.href = '{link}Index{link}'; } );
+$(function() {
+  if ( '{value}current_site_application{value}' == 'Index' ) {
+    $('#btnHome').remove();
+  } else {
+    $('#btn{value}current_site_application{value}').addClass('btn-success');
+    $('#btn{value}current_site_application{value} i').addClass('icon-white');
+  }
+});
 </script>
 
 {import}{value}html_page_contents_file{value}{import}
 
-<footer>
-  {lang}copyright_footer{lang}
+<footer class="row">
+  <div class="span12">
+    {lang}copyright_footer{lang}
+  </div>
 </footer>
 
 </div>
