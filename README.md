@@ -30,10 +30,8 @@ following directories must be symlinked to the "oscommerce" installation:
     cd ../../../public/sites
     ln -s ../../../oscommerce_website/public/sites/Website Website
     cd ../external
-    ln -s ../../../oscommerce_website/public/external/flexslider flexslider
+    ln -s ../../../oscommerce_website/public/external/bootstrap bootstrap
     ln -s ../../../oscommerce_website/public/external/less less
-    cd jquery/ui/themes
-    ln -s ../../../../../../oscommerce_website/public/external/jquery/ui/themes/Aristo Aristo
 
 A configuration block is also required in osCommerce/OM/Config/settings.ini,
 which can be copied from an existing block:
