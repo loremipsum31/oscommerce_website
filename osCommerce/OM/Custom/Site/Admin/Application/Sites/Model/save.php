@@ -22,8 +22,16 @@
           throw new MessageStackException('error_site_already_exists');
         }
 
+        if ( in_array(strtolower($data['site']), getReservedWords::execute()) ) {
+          throw new MessageStackException('error_site_is_reserved_word');
+        }
+
         if ( !preg_match('/[A-Z][A-Za-z0-9-_]*/', $data['application']) ) {
           throw new MessageStackException('error_invalid_application_name');
+        }
+
+        if ( in_array(strtolower($data['application']), getReservedWords::execute()) ) {
+          throw new MessageStackException('error_application_is_reserved_word');
         }
 
         if ( file_exists(OSCOM::BASE_DIRECTORY . 'Custom/Site') && !is_writable(OSCOM::BASE_DIRECTORY . 'Custom/Site') ) {

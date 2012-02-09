@@ -22,6 +22,10 @@
           throw new MessageStackException('error_invalid_application_name');
         }
 
+        if ( in_array(strtolower($data['name']), getReservedWords::execute()) ) {
+          throw new MessageStackException('error_application_is_reserved_word');
+        }
+
         if ( file_exists(OSCOM::BASE_DIRECTORY . 'Custom/Site/' . $data['site'] . '/Application/' . $data['name']) ) {
           throw new MessageStackException('error_application_already_exists');
         }
