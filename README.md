@@ -27,6 +27,7 @@ following directories must be symlinked to the "oscommerce" installation:
     ln -s ../../../../../oscommerce_website/osCommerce/OM/Custom/Site/Website Website
     cd ..
     ln -s ../../../../oscommerce_website/osCommerce/OM/Custom/Template Template
+    ln -s ../../../../oscommerce_website/osCommerce/OM/Custom/Exception Exception
     cd ../../../public/sites
     ln -s ../../../oscommerce_website/public/sites/Website Website
     cd ../external
