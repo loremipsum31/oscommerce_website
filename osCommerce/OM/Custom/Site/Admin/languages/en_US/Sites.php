@@ -14,8 +14,14 @@ table_heading_applications = Applications
 
 action_heading_new_site = New Site
 
+field_site_name = Site Name:
+
+introduction_new_site = Please fill in the following information for the new site.
+
 action_heading_new_application = New Application
 
-field_application_name = Name:
+field_default_application_name = Default Application Name:
 
 introduction_new_application = Please fill in the following information for the new application.
+
+field_application_name = Application Name:
