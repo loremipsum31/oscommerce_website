@@ -1,0 +1,22 @@
+<div id="sidebar" class="span3">
+  <ul class="nav nav-list">
+    <li class="nav-header">{lang}navbutton_services{lang}</li>
+    <li id="snIndex"><a href="{link}Services{link}">{lang}sidebar_nav_promotions{lang}</a></li>
+    <li id="snHosting"><a href="{link}Services|Website|Hosting{link}">{lang}sidebar_nav_hosting{lang}</a></li>
+    <li id="snDevelopers"><a href="{link}Services|Website|Developers{link}">{lang}sidebar_nav_developers{lang}</a></li>
+    <li id="snPayment"><a href="{link}Services|Website|Payment{link}">{lang}sidebar_nav_payment{lang}</a></li>
+    <li id="snTemplates"><a href="{link}Services|Website|Templates{link}">{lang}sidebar_nav_templates{lang}</a></li>
+    <li id="snSecurity"><a href="{link}Services|Website|Security{link}">{lang}sidebar_nav_security{lang}</a></li>
+    <li id="snMarketing"><a href="{link}Services|Website|Marketing{link}">{lang}sidebar_nav_marketing{lang}</a></li>
+  </ul>
+</div>
+
+<script>
+var current_action = '{value}current_site_application_action{value}';
+
+if ( current_action.length < 1 ) {
+  current_action = 'Index';
+}
+
+$('#sidebar #sn' + current_action).addClass('active');
+</script>
