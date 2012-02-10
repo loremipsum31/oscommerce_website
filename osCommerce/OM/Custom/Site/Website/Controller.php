@@ -34,7 +34,7 @@
       $OSCOM_Language = Registry::get('Language');
 
       $OSCOM_Template->setValue('html_text_direction', $OSCOM_Language->getTextDirection());
-      $OSCOM_Template->setValue('html_lang', $OSCOM_Language->getCode());
+      $OSCOM_Template->setValue('html_lang', OSCOM::getDef('html_lang_code')); // HPDL A better solution is to define the ISO 639-1 value at the language level
       $OSCOM_Template->setValue('html_character_set', $OSCOM_Language->getCharacterSet());
       $OSCOM_Template->setValue('html_page_title', $OSCOM_Template->getPageTitle());
       $OSCOM_Template->setValue('html_page_contents_file', $OSCOM_Template->getPageContentsFile());
