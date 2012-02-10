@@ -26,7 +26,7 @@
 
   <link rel="icon" type="image/png" href="{publiclink}images/favicon.ico{publiclink}" />
 
-  <meta name="generator" value="osCommerce Online Merchant" />
+  <meta name="generator" content="osCommerce Online Merchant" />
   <meta name="robots" content="noindex,nofollow" />
 
   <script type="text/javascript" src="public/external/jquery/jquery-1.7.1.min.js"></script>
