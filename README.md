@@ -25,6 +25,8 @@ following directories must be symlinked to the "oscommerce" installation:
     mkdir oscommerce/osCommerce/OM/Custom/Site
     cd oscommerce/osCommerce/OM/Custom/Site
     ln -s ../../../../../oscommerce_website/osCommerce/OM/Custom/Site/Website Website
+    ln -s ../../../../../oscommerce_website/osCommerce/OM/Custom/Site/Admin Admin
+    ln -s ../../../../../oscommerce_website/osCommerce/OM/Custom/Site/_skel _skel
     cd ..
     ln -s ../../../../oscommerce_website/osCommerce/OM/Custom/Template Template
     ln -s ../../../../oscommerce_website/osCommerce/OM/Custom/Exception Exception
