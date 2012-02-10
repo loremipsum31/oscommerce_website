@@ -3391,16 +3391,20 @@ header #logo {
   padding-top: 15px;
 }
 header #nav {
-  font-size: 0.96em;
-  padding-top: 30px;
+  font-size: 0.98em;
+  padding-top: 26px;
 }
 header #nav .btn-group {
   float: right;
 }
+header #nav .btn {
+  padding: 8px;
+  padding-right: 12px;
+}
 header #nav i {
   padding-right: 10px;
 }
-header #nav #btnHome {
+header #nav #btnHome i {
   padding-right: 0px;
 }
 footer {

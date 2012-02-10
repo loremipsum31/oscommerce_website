@@ -53,9 +53,9 @@
     <div class="btn-group">
       <a href="{link}Index{link}" class="btn" id="btnHome"><i class="icon-home"></i></a>
       <a href="{link}Us{link}" class="btn" id="btnUs"><i class="icon-user"></i>{lang}navbutton_us{lang}</a>
-      <a href="{link}Products{link}" class="btn"><i class="icon-download"></i>{lang}navbutton_products{lang}</a>
-      <a href="{link}Services{link}" class="btn"><i class="icon-cog"></i>{lang}navbutton_services{lang}</a>
-      <a href="{link}Community{link}" class="btn"><i class="icon-comment"></i>{lang}navbutton_community{lang}</a>
+      <a href="{link}Products{link}" class="btn" id="btnProducts"><i class="icon-download"></i>{lang}navbutton_products{lang}</a>
+      <a href="{link}Services{link}" class="btn" id="btnServices"><i class="icon-cog"></i>{lang}navbutton_services{lang}</a>
+      <a href="{link}Community{link}" class="btn" id="btnCommunity"><i class="icon-comment"></i>{lang}navbutton_community{lang}</a>
     </div>
   </div>
 </header>
