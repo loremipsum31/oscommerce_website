@@ -12,6 +12,8 @@ table_heading_action = Action
 
 table_heading_applications = Applications
 
+icon_play = Open
+
 action_heading_new_site = New Site
 
 field_site_name = Site Name:

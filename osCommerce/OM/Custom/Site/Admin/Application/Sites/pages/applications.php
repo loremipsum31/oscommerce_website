@@ -50,7 +50,7 @@
 </form>
 
 <div style="padding: 2px;">
-  <span id="dataTableLegend"><?php echo '<b>' . OSCOM::getDef('table_action_legend') . '</b> ' . HTML::icon('edit.png') . '&nbsp;' . OSCOM::getDef('icon_edit') . '&nbsp;&nbsp;' . HTML::icon('trash.png') . '&nbsp;' . OSCOM::getDef('icon_trash'); ?></span>
+  <span id="dataTableLegend"><?php echo '<b>' . OSCOM::getDef('table_action_legend') . '</b> ' . HTML::icon('edit.png') . '&nbsp;' . OSCOM::getDef('icon_edit') . '&nbsp;&nbsp;' . HTML::icon('play.png') . '&nbsp;' . OSCOM::getDef('icon_play') . '&nbsp;&nbsp;' . HTML::icon('trash.png') . '&nbsp;' . OSCOM::getDef('icon_trash'); ?></span>
   <span id="batchPullDownMenu"></span>
 </div>
 
@@ -68,6 +68,9 @@
 
   var dataTableName = 'siteApplicationsDataTable';
   var dataTableDataURL = '<?php echo OSCOM::getRPCLink(null, null, 'GetAllApplications&id=' . $_GET['id']); ?>';
+
+  var applicationOpenLink = '<?php echo OSCOM::getConfig('http_server', OSCOM::getDefaultSite()) . OSCOM::getConfig('dir_ws_http_server', OSCOM::getDefaultSite()) . OSCOM::getConfig('bootstrap_file', 'OSCOM') . '?' . $_GET['id'] . '&APPLICATIONID'; ?>';
+  var applicationOpenLinkIcon = '<?php echo HTML::icon('play.png'); ?>';
 
   var applicationDeleteLink = '<?php echo OSCOM::getLink(null, null, 'ApplicationDelete&id=' . $_GET['id'] . '&appID=APPLICATIONID'); ?>';
   var applicationDeleteLinkIcon = '<?php echo HTML::icon('trash.png'); ?>';
@@ -94,7 +97,7 @@
       newCell.innerHTML = record.id;
 
       newCell = newRow.insertCell(1);
-      newCell.innerHTML = '<a href="' + applicationDeleteLink.replace('APPLICATIONID', record.id) + '">' + applicationDeleteLinkIcon + '</a>';
+      newCell.innerHTML = '<a href="' + applicationOpenLink.replace('APPLICATIONID', record.id) + '" target="_blank">' + applicationOpenLinkIcon + '</a>&nbsp;<a href="' + applicationDeleteLink.replace('APPLICATIONID', record.id) + '">' + applicationDeleteLinkIcon + '</a>';
       newCell.align = 'right';
 
       rowCounter++;

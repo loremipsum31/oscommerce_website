@@ -50,7 +50,7 @@
 </form>
 
 <div style="padding: 2px;">
-  <span id="dataTableLegend"><?php echo '<b>' . OSCOM::getDef('table_action_legend') . '</b> ' . HTML::icon('edit.png') . '&nbsp;' . OSCOM::getDef('icon_edit'); ?></span>
+  <span id="dataTableLegend"><?php echo '<b>' . OSCOM::getDef('table_action_legend') . '</b> ' . HTML::icon('edit.png') . '&nbsp;' . OSCOM::getDef('icon_edit') . '&nbsp;&nbsp;' . HTML::icon('play.png') . '&nbsp;' . OSCOM::getDef('icon_play'); ?></span>
   <span id="batchPullDownMenu"></span>
 </div>
 
@@ -75,6 +75,9 @@
   var siteEditLink = '<?php echo OSCOM::getLink(null, null, 'Save&id=SITEID'); ?>';
   var siteEditLinkIcon = '<?php echo HTML::icon('edit.png'); ?>';
 
+  var siteOpenLink = '<?php echo OSCOM::getConfig('http_server', OSCOM::getDefaultSite()) . OSCOM::getConfig('dir_ws_http_server', OSCOM::getDefaultSite()) . OSCOM::getConfig('bootstrap_file', 'OSCOM') . '?SITEID'; ?>';
+  var siteOpenLinkIcon = '<?php echo HTML::icon('play.png'); ?>';
+
   var osC_DataTable = new osC_DataTable();
   osC_DataTable.load();
 
@@ -97,7 +100,7 @@
       newCell.innerHTML = siteLinkIcon + '&nbsp;<a href="' + siteLink.replace('SITEID', record.id) + '" class="parent">' + htmlSpecialChars(record.id) + '</a>';
 
       newCell = newRow.insertCell(1);
-      newCell.innerHTML = '<a href="' + siteEditLink.replace('SITEID', record.id) + '">' + siteEditLinkIcon + '</a>';
+      newCell.innerHTML = '<a href="' + siteEditLink.replace('SITEID', record.id) + '">' + siteEditLinkIcon + '</a>&nbsp;<a href="' + siteOpenLink.replace('SITEID', record.id) + '" target="_blank">' + siteOpenLinkIcon + '</a>';
       newCell.align = 'right';
 
       rowCounter++;
