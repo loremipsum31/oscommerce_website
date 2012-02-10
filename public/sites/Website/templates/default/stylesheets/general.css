@@ -3494,11 +3494,11 @@ footer p {
 #services #partners ul li img {
   padding: 10px;
 }
-.team_profile {
+.team_profile, .partner_profile {
   overflow: hidden;
   padding-bottom: 20px;
 }
-.team_profile img {
+.team_profile img, .partner_profile img {
   float: left;
   margin-right: 15px;
   border: 1px solid #000;
