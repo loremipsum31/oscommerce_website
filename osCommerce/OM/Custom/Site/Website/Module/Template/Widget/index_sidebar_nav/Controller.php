@@ -6,14 +6,14 @@
  * @license BSD License; http://www.oscommerce.com/bsdlicense.txt
  */
 
-  namespace osCommerce\OM\Core\Site\Website\Modules\Template\Widgets\index_sidebar_nav;
+  namespace osCommerce\OM\Core\Site\Website\Module\Template\Widget\index_sidebar_nav;
 
   use osCommerce\OM\Core\HttpRequest;
   use osCommerce\OM\Core\OSCOM;
   use osCommerce\OM\Core\Registry;
 
   class Controller extends \osCommerce\OM\Core\Template\WidgetAbstract {
-    static public function execute() {
+    static public function execute($param = null) {
       $OSCOM_Template = Registry::get('Template');
 
       $OSCOM_Template->setValue('stats_addons', number_format(6700));
@@ -22,10 +22,10 @@
       $OSCOM_Template->setValue('stats_community_total_users', static::getTotalUsers());
       $OSCOM_Template->setValue('stats_community_total_forum_postings', static::getTotalForumPostings());
 
-      $file = OSCOM::BASE_DIRECTORY . 'Custom/Site/' . OSCOM::getSite() . '/Modules/Template/Widgets/index_sidebar_nav/pages/main.html';
+      $file = OSCOM::BASE_DIRECTORY . 'Custom/Site/' . OSCOM::getSite() . '/Module/Template/Widget/index_sidebar_nav/pages/main.html';
 
       if ( !file_exists($file) ) {
-        $file = OSCOM::BASE_DIRECTORY . 'Core/Site/' . OSCOM::getSite() . '/Modules/Template/Widgets/index_sidebar_nav/pages/main.html';
+        $file = OSCOM::BASE_DIRECTORY . 'Core/Site/' . OSCOM::getSite() . '/Module/Template/Widget/index_sidebar_nav/pages/main.html';
       }
 
       return file_get_contents($file);
