@@ -1,20 +1,3 @@
-<?php
-/**
- * osCommerce Website
- * 
- * @copyright Copyright (c) 2012 osCommerce; http://www.oscommerce.com
- * @license BSD License; http://www.oscommerce.com/bsdlicense.txt
- */
-
-// for index.php HPDL
-/*
-  use osCommerce\OM\Core\Registry;
-  echo Registry::get('Template')->getContent();
-*/
-
-  ob_start();
-?>
-
 <!doctype html>
 
 <html dir="{value}html_text_direction{value}" lang="{value}html_lang{value}">
@@ -84,9 +67,3 @@ $(function() {
 </body>
 
 </html>
-
-<?php
-  $content = ob_get_clean();
-
-  echo $OSCOM_Template->parseContent($content);
-?>
