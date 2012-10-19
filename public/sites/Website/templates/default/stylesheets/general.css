@@ -144,7 +144,7 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
@@ -484,7 +484,7 @@ p {
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 200;
   line-height: 30px;
 }
@@ -701,7 +701,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 16px;
+  font-size: 14px;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -717,7 +717,7 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   word-break: break-all;
   word-wrap: break-word;
@@ -756,7 +756,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 27px;
+  font-size: 24px;
   line-height: 40px;
   color: #333333;
   border: 0;
@@ -771,7 +771,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 20px;
 }
@@ -806,7 +806,7 @@ input[type="color"],
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 9px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   color: #555555;
   -webkit-border-radius: 3px;
@@ -1289,7 +1289,7 @@ select:focus:required:invalid:focus {
   position: relative;
   margin-bottom: 0;
   *margin-left: 0;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: top;
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1310,7 +1310,7 @@ select:focus:required:invalid:focus {
   height: 20px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 20px;
   text-align: center;
@@ -2502,7 +2502,7 @@ button.close {
   *zoom: 1;
   padding: 4px 14px;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   *line-height: 20px;
   text-align: center;
@@ -2592,7 +2592,7 @@ button.close {
 }
 .btn-large {
   padding: 9px 14px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: normal;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2603,7 +2603,7 @@ button.close {
 }
 .btn-small {
   padding: 3px 9px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
 }
 .btn-small [class^="icon-"] {
@@ -2611,7 +2611,7 @@ button.close {
 }
 .btn-mini {
   padding: 2px 6px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 17px;
 }
 .btn-block {
@@ -2921,7 +2921,7 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-group > .btn,
 .btn-group > .dropdown-menu {
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn-group > .btn-mini {
   font-size: 11px;
@@ -4448,7 +4448,7 @@ a.thumbnail:hover {
 }
 .label,
 .badge {
-  font-size: 15.228px;
+  font-size: 13.536px;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
