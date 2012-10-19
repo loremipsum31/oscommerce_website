@@ -4979,10 +4979,8 @@ footer p {
 }
 #chocolate_side ul li img {
   float: left;
+  padding-top: 20px;
   padding-right: 10px;
-}
-#chocolate_side ul li:last-child {
-  border-right: none;
 }
 #services #promotions ul {
   list-style-type: none;
