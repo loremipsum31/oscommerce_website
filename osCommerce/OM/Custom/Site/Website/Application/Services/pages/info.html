@@ -1,31 +1,42 @@
 <div id="highlights">
-  <img src="{publiclink}images/940x285.gif{publiclink}" />
+  {raw}partner_header{raw}
 </div>
 
 <div class="row">
   <div id="maincontainer" class="span9">
     <div id="maincontent">
-      <h1>Partner Title</h1>
+      <h1>{value}partner title{value}</h1>
 
-      <img src="{publiclink}images/150x150.gif{publiclink}" class="img-polaroid" style="float: left; margin-right: 15px;" />
+      <a href="{value}partner url{value}" target="_blank"><img src="{publiclink}images/partners/{raw}partner image_small{raw}{publiclink}" alt="" title="{value}partner title{value}" width="130" height="50" style="float: left; margin-right: 10px;" /></a>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>{nl2br}{value}partner desc_long{value}{nl2br}</p>
 
-      <div class="hero-unit" style="padding: 40px;">
+      <div class="hero-unit">
         <p style="float: right;">
-          <i class="icon-user"></i> +99 (123) 456-7890<br />
-          <i class="icon-envelope"></i> partner@partner.com<br /><br />
-          <a class="btn btn-info btn-large">Visit Partner Website</a>
+
+{ifvalue partner telephone}
+          <i class="icon-user" style="margin-top: 3px;"></i> {value}partner telephone{value}<br />
+{ifvalue}
+
+{ifvalue partner email}
+          <i class="icon-envelope" style="margin-top: 3px;"></i> <a href="mailto:{value}partner email{value}">{value}partner email{value}</a><br />
+{ifvalue}
+
+          <a href="{value}partner url{value}" target="_blank" class="btn btn-info btn-large" style="margin-top: 10px;">{lang}button_visit_partner_website{lang}</a>
         </p>
+
         <p>
-          <strong>Partner Inc.</strong><br />
-          1 Way Street<br />
-          Beverly Hills, CA 90210<br />
-          United States of America
+          <strong>{value}partner title{value}</strong><br />
+
+{ifvalue partner address}
+          {nl2br}{value}partner address{value}{nl2br}<br />
+{ifvalue}
+
+          <a href="{value}partner url{value}" target="_blank">{value}partner public_url{value}</a>
         </p>
       </div>
+
+      <p><a href="{link}Services|Website|{raw}services_action{raw}{link}">{lang}link_back_to_listing{lang}</a></p>
     </div>
   </div>
 

@@ -3,34 +3,49 @@
 # @copyright Copyright (c) 2012 osCommerce; http://www.oscommerce.com
 # @license BSD License; http://www.oscommerce.com/bsdlicense.txt
 
-services_html_page_title = osCommerce, Dedicated Services
+services_html_page_title = osCommerce, Partner Services
 
 services_page_title = Services
 
-services_main_content = <p>We focus on providing you the best products possible and partner with service providers around the world who support you directly and provide the best services possible for your online business.</p>
+services_main_content = <p>We focus on providing you the best products possible and partner with experts around the world who focus on providing the best services for your online business.</p>
 
-info_html_page_title = osCommerce, Dedicated Services
+promotions_heading = Promotions
 
-hosting_html_page_title = osCommerce, Dedicated Hosting Services
+cs_html_page_title = osCommerce, Partner With Us
 
-hosting_page_title = Hosting
+cs_page_title = Partner With Us
+cs_main_content = <p>We partner with experts around the world who focus on providing the best services to customers. If you provide e-commerce services and would like to support us and be promoted to our community, get in touch - we're excited to work with you!</p>
 
-developers_html_page_title = osCommerce, Dedicated Developer Services
+cs_plans_title = Partnership Plans
+cs_plans_title_silver = Silver
+cs_plans_title_gold = Gold
 
-developers_page_title = Developers
+cs_plans_service_partner = Displayed as a partner on the website
+cs_plans_service_information_page = Own partner information page
+cs_plans_service_commercial_enquiries = View and reply to commercial enquiries on the forum
+cs_plans_service_profile = Highlighted community profile
+cs_plans_service_custom_header = Large custom header image on partner information page
+cs_plans_service_promotions = Show promotions on the website
+cs_plans_service_banner = Show banner on the forum with latest tweet
 
-payment_html_page_title = osCommerce, Dedicated Payment Services
+cs_pricing_title = Pricing
+cs_pricing_1_month = 1 Month
+cs_pricing_3_months = 3 Months
+cs_pricing_6_months = 6 Months
+cs_pricing_12_months = 12 Months
+cs_pricing_enquire = enquire
 
-payment_page_title = Payment
+cs_pricing_info = All prices are in Euro. German residents will be additionally taxed 19% (MwSt.).
 
-templates_html_page_title = osCommerce, Dedicated Template Services
+cs_enquiry_title = Interested?
+cs_enquiry_info = Send us your enquiries at:
 
-templates_page_title = Templates
+listing_html_page_title = osCommerce, :category_title Partners
 
-security_html_page_title = osCommerce, Dedicated Security Services
+partner_html_page_title = osCommerce Partner, :partner_title
 
-security_page_title = Security
+button_partner_with_us = Partner with us
+button_find_out_more = Find out more
+button_visit_partner_website = Visit Partner Website
 
-marketing_html_page_title = osCommerce, Dedicated Marketing Services
-
-marketing_page_title = Marketing
+link_back_to_listing = Back to listing
