@@ -40,6 +40,7 @@
       $OSCOM_Template->setValue('html_page_contents_file', $OSCOM_Template->getPageContentsFile());
       $OSCOM_Template->setValue('current_site_application', OSCOM::getSiteApplication());
       $OSCOM_Template->setValue('current_site_application_action', Registry::get('Application')->getCurrentAction());
+      $OSCOM_Template->setValue('site_version', OSCOM::getVersion(OSCOM::getSite()));
     }
 
     public static function getDefaultApplication() {
