@@ -24,6 +24,10 @@
       return isset($key) ? static::$_partner[$code][$key] : static::$_partner[$code];
     }
 
+    public static function getAll() {
+      return OSCOM::callDB('Website\GetPartnersAll', null, 'Site');
+    }
+
     public static function getInCategory($code) {
       if ( !isset(static::$_partners[$code]) ) {
         static::$_partners[$code] = OSCOM::callDB('Website\GetPartners', array('code' => $code), 'Site');

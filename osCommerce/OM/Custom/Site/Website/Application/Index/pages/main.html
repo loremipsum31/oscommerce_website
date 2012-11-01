@@ -15,18 +15,18 @@
 <div id="chocolate_side" class="row">
   <ul>
     <li class="span4">
-      <img src="{publiclink}images/front/php.png{publiclink}" />
+      <img src="{publiclink}images/front/addons.png{publiclink}" />
 
-      <h3>{lang}choco_php_title{lang}</h3>
+      <h3>{lang}choco_addons_title{lang}</h3>
 
-      {lang}choco_php_content{lang}
+      {lang}choco_addons_content{lang}
     </li>
     <li class="span4">
-      <img src="{publiclink}images/front/updates.png{publiclink}" />
+      <img src="{publiclink}images/front/passionate.png{publiclink}" />
 
-      <h3>{lang}choco_coreupdate_title{lang}</h3>
+      <h3>{lang}choco_passionate_title{lang}</h3>
 
-      {lang}choco_coreupdate_content{lang}
+      {lang}choco_passionate_content{lang}
     </li>
     <li class="span4">
       <img src="{publiclink}images/front/osi.png{publiclink}" />
@@ -42,24 +42,24 @@
   <div id="promotions" class="span5">
     <h2>{lang}services_promotions_title{lang}</h2>
 
-    <ul>
-      <li><img src="{publiclink}images/150x100.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/150x100.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/150x100.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/150x100.gif{publiclink}" /></li>
+    <ul class="thumbnails">
+
+{loop random_partner_promotions}
+      <li><a href="#image_promo_url#" target="_blank" class="thumbnail"><img src="{publiclink}images/partners/#image_promo#{publiclink}" alt="" title="#title#" width="150" height="50" /></a></li>
+{loop}
+
     </ul>
   </div>
 
   <div id="partners" class="span7">
     <h2>{lang}services_partners_title{lang}</h2>
 
-    <ul>
-      <li><img src="{publiclink}images/130x50.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/130x50.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/130x50.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/130x50.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/130x50.gif{publiclink}" /></li>
-      <li><img src="{publiclink}images/130x50.gif{publiclink}" /></li>
+    <ul class="thumbnails">
+
+{loop random_partners}
+      <li><a href="{link}Services|Website|#category_code#&#code#{link}" class="thumbnail"><img src="{publiclink}images/partners/#image_small#{publiclink}" alt="" title="#title#" width="130" height="50" /></a></li>
+{loop}
+
     </ul>
   </div>
 </div>

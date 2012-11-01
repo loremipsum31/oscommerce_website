@@ -14,7 +14,7 @@
     public static function execute() {
       $OSCOM_PDO = Registry::get('PDO');
 
-      $Qgroups = $OSCOM_PDO->prepare('select c.id, c.title, c.code from :table_website_partner_category c, :table_website_partner_transaction t, :table_website_partner p, :table_website_partner_package pp where t.date_start <= now() and t.date_end >= now() and t.package_id = pp.id and pp.status = 1 and t.partner_id = p.id and p.category_id = c.id group by c.id order by c.sort_order, c.title');
+      $Qgroups = $OSCOM_PDO->prepare('select c.title, c.code from :table_website_partner_category c, :table_website_partner_transaction t, :table_website_partner p, :table_website_partner_package pp where t.date_start <= now() and t.date_end >= now() and t.package_id = pp.id and pp.status = 1 and t.partner_id = p.id and p.category_id = c.id group by c.id order by c.sort_order, c.title');
       $Qgroups->setCache('website_partner_categories', 720);
       $Qgroups->execute();
 

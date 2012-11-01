@@ -16,8 +16,8 @@
     static public function execute($param = null) {
       $OSCOM_Template = Registry::get('Template');
 
-      $OSCOM_Template->setValue('stats_addons', number_format(6700));
-      $OSCOM_Template->setValue('stats_sites', number_format(12700));
+      $OSCOM_Template->setValue('stats_addons', number_format(7000));
+      $OSCOM_Template->setValue('stats_sites', number_format(12800));
       $OSCOM_Template->setValue('stats_community_online_users', static::getOnlineUsers());
       $OSCOM_Template->setValue('stats_community_total_users', static::getTotalUsers());
       $OSCOM_Template->setValue('stats_community_total_forum_postings', static::getTotalForumPostings());
