@@ -47,3 +47,11 @@ legal_impressum = <h2 class="text-success">Impressum</h2>
 <p>The osCommerce website is operated by:</p>
 <p>Harald Ponce de Leon<br />Remscheider Str. 96<br />42659 Solingen<br />Germany<br /><a href="mailto:hpdl@oscommerce.com">hpdl@oscommerce.com</a></p>
 <p>We are not responsible for the content of external sites that are linked to from the osCommerce website, nor for the content the community has submited (eg, add-ons, live shops, forum postings, ..).</p>
+
+news_html_page_title = osCommerce, News
+
+news_page_title = News
+
+news_entry_html_page_title = osCommerce News, :news_title
+
+link_back_to_listing = Back to listing

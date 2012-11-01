@@ -1,0 +1,22 @@
+<div id="highlights">
+  <img src="{publiclink}{raw}highlights_image{raw}{publiclink}" width="940" height="285" />
+</div>
+
+<div class="row">
+  <div id="maincontainer" class="span9">
+    <div id="maincontent">
+      <h1>{lang}news_page_title{lang}</h1>
+
+      <dl>
+
+{loop news_listing}
+        <dt id="n#id#"><a href="{link}Us|Website|News=#id#{link}">#title#</a></dt>
+        <dd style="padding-bottom: 20px;">#date_added_formatted#</dd>
+{loop}
+
+      </dl>
+    </div>
+  </div>
+
+  {widget}us_sidebar_nav{widget}
+</div>
