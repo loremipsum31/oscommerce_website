@@ -11,4 +11,4 @@ navbutton_products = Products
 navbutton_services = Services
 navbutton_support = Support
 
-copyright_footer = <p>Copyright (c) 2012 osCommerce. All rights reserved. osCommerce is a registered trademark of Harald Ponce de Leon.</p>
+copyright_footer = <p>Copyright (c) {value}current_year{value} osCommerce. All rights reserved. osCommerce is a registered trademark of Harald Ponce de Leon.</p>

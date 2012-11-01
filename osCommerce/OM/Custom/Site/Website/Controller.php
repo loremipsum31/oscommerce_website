@@ -41,6 +41,7 @@
       $OSCOM_Template->setValue('current_site_application', OSCOM::getSiteApplication());
       $OSCOM_Template->setValue('current_site_application_action', Registry::get('Application')->getCurrentAction());
       $OSCOM_Template->setValue('site_version', OSCOM::getVersion(OSCOM::getSite()));
+      $OSCOM_Template->setValue('current_year', date('Y'));
     }
 
     public static function getDefaultApplication() {
