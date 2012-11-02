@@ -1,6 +1,6 @@
 page_title = Hello, world!
 
-introduction = <p>This is a template skeleton to help you get started in developing a new Site.</p><p>You are currently viewing the <a href="{link}{value}current_site_application{value}{link}" class="btn btn-primary">{value}current_site_application{value}</a> Application.</p>
+introduction = <p>This is a template skeleton to help you get started in developing a new Site.</p><p>You are currently viewing the <a href="{link}{raw}current_site_application{raw}{link}" class="btn btn-primary">{value}current_site_application{value}</a> Application.</p>
 
 block_heading_1 = Heading 1
 block_heading_2 = Heading 2
