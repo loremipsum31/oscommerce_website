@@ -28,15 +28,7 @@ legal_html_page_title = osCommerce, Legal
 legal_page_title = Legal
 
 legal_trademark_policy = <h2 class="text-warning">Trademark Policy</h2>
-<p>osCommerce is a registered trademark of Harald Ponce de Leon.</p>
-<h5>Redistributing osCommerce Online Merchant</h5>
-<p>The osCommerce Online Merchant name and osCommerce logo may be used for unmodified distributions of osCommerce Online Merchant as found on the osCommerce website.</p>
-<h5>Using the osCommerce Name and Logo</h5>
-<p>The usage of the osCommerce name must use the correct casing of letters. "osCommerce" is correctly written where "OsCommerce", "OSCommerce", and "OS Commerce" are not.</p>
-<p>The usage of the osCommerce name and logo are not allowed to be used in conjunction with organization names, product names, and service titles.</p>
-<h5>Linking to the osCommerce Support Site</h5>
-<p>The osCommerce website must be linked or referenced to when using the osCommerce name or logo.</p>
-<p>The address of the osCommerce website is: http://www.oscommerce.com</p>
+<p>osCommerce is a registered trademark of Harald Ponce de Leon.</p><dl><dt style="padding-bottom: 10px;">Distribution</dt><dd><p>The osCommerce Online Merchant name and osCommerce logo may be used for unmodified distributions of osCommerce Online Merchant as found on the osCommerce website.</p></dd><dt style="padding-bottom: 10px;">Name and Logo</dt><dd><p>The usage of the osCommerce name must use the correct casing of letters. "osCommerce" is correctly written where "OsCommerce", "OSCommerce", and "OS Commerce" are not.</p><p>The usage of the osCommerce name and logo are not allowed to be used in conjunction with organization names, product names, and service titles.</p></dd><dt style="padding-bottom: 10px;">Linking</dt><dd><p>The osCommerce website must be linked or referenced to when using the osCommerce name or logo.</p><p>The address of the osCommerce website is: http://www.oscommerce.com</p></dd></dl>
 
 legal_copyright_policy = <h2 class="text-error">Copyright Policy</h2>
 <p>The content of the osCommerce website is under the following copyright:</p>
